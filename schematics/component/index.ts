@@ -1,6 +1,7 @@
-import { Rule, SchematicContext, Tree, url, apply, template, mergeWith } from '@angular-devkit/schematics';
+import { Rule, SchematicContext, Tree, url, apply, template, move, mergeWith } from '@angular-devkit/schematics';
 import { strings } from '@angular-devkit/core';
 import { Schema } from './schema';
+import { normalize } from 'path';
 
 
 // You don't have to export the function as default. You can also have more than one rule factory
@@ -12,7 +13,7 @@ export function component(_options: Schema): Rule {
       template({
         ..._options,
         ...strings
-      })
+      }),
     ]);
     return mergeWith(sourceParametrizedTemplates);
   };
