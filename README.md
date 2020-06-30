@@ -8,8 +8,10 @@ Embed React components in your Angular app
 ```
 npm install --save ngr react react-dom
 ```
-2. Add jsx files support to ```compiler options``` tsconfig.json in your project:
-```"jsx": "react"```
+2. Add jsx files support to ```compiler options``` in the tsconfig.json file in your project:  
+```
+"jsx": "react"
+```
 ### Creating a React component
 ```
 ng generate ngr:component hero-detail
