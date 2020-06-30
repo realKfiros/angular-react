@@ -14,6 +14,7 @@ export function component(_options: Schema): Rule {
         ..._options,
         ...strings
       }),
+      move(normalize(process.cwd() + '/src/app'))
     ]);
     return mergeWith(sourceParametrizedTemplates);
   };
