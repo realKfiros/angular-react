@@ -1,8 +1,7 @@
 # ngr 
 Embed React components in your Angular app  
 
-[![npm version](https://badge.fury.io/js/ngr.svg)](https://badge.fury.io/js/ngr)
-![Twitter Follow](https://img.shields.io/twitter/follow/realKfiros?style=social)
+[![npm version](https://badge.fury.io/js/ngr.svg)](https://badge.fury.io/js/ngr)  
 ### Getting started
 1. Install the dependency from npm:
 ```
@@ -16,4 +15,5 @@ npm install --save ngr react react-dom
 ```
 ng generate ngr:component hero-detail
 ```
-* Note: You need to add the component to your module.
+* Note: You need to add the component to your module.  
+![Twitter Follow](https://img.shields.io/twitter/follow/realKfiros?style=social)
