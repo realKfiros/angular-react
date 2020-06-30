@@ -1,6 +1,6 @@
 {
-  "name": "@angular/react",
-  "version": "0.0.1",
+  "name": "ngr",
+  "version": "0.5.0",
   "scripts": {
     "build": "../../node_modules/.bin/tsc -p tsconfig.schematics.json",
     "copy:schemas": "cpx schematics/*/schema.json ../../dist/angular-react/",

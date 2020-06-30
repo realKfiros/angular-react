@@ -12,14 +12,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import <%= classify(name) %> from './<%= dasherize(name) %>';
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const containerElementName = '<%= classify(name) %>';
 
 @Component({
     selector: `app-<%= dasherize(name) %>`,
-    template: `<span #<%= classify(name) %></span>`,
+    template: `<span #<%= classify(name) %>></span>`,
     styles: [`./<%= dasherize(name) %>.component.css`]
 })
 export class <%= classify(name) %>Component implements OnChanges, OnDestroy, AfterViewInit {
@@ -40,6 +40,6 @@ export class <%= classify(name) %>Component implements OnChanges, OnDestroy, Aft
     }
 
     private render() {
-        ReactDom.render(<<%= classify(name) %> />, this.containerRef.nativeElement);
+        ReactDOM.render(<<%= classify(name) %> />, this.containerRef.nativeElement);
     }
 }
