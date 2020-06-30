@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "ReactComponent",
+    "title": "React component schema",
+    "type": "object",
+    "description": "Generates a React component inside an Angular app",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the new component",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
